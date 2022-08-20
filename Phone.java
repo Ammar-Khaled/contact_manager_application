@@ -7,8 +7,8 @@ public class Phone {
     }
 
     
-    public Phone(long phone) {
-        phoneNumber = phone;
+    public Phone(long phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
 
@@ -29,6 +29,23 @@ public class Phone {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    
+
+    public long getPhoneNumber() {
+        return phoneNumber;
+    }
+
+
+    public String getType() {
+        return type;
+    }
+
+
+    public String getDescription() {
+        return description;
+    }
+
 
     public String getPhoneInfo() {
         return "{phone: " + this.phoneNumber + ", type: " + this.type + ", description: " +

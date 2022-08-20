@@ -28,7 +28,20 @@ public class Email {
         this.description = description;
     }
     
-    public String get() {
+    
+    public String getEmail() {
+        return email;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getEmailInfo() {
     return "{email: "+this.email+", type: "+this.type+", description: "+
                 this.description + "}";
     }

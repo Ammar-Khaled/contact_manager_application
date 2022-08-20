@@ -30,7 +30,24 @@ public class Address {
         this.description = description;
     }
 
-    public String get(){
+    
+
+    public String getPlace() {
+        return place;
+    }
+
+
+    public String getType() {
+        return type;
+    }
+
+
+    public String getDescription() {
+        return description;
+    }
+
+
+    public String getAddress(){
         return "{place: "+this.place+", type: "+this.type+", description: "+
                 this.description + "}";
     }
